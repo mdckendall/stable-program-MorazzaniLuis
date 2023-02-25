@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
+
 class Main {
   public static void main(String[] args) {
     //Ask the user here
-	  Stable s = new Stable();
+    Stable s = new Stable();
+    Scanner scanner = new Scanner(System.in);
 		System.out.println("What is the address of the stable?");
-		Scanner scanner = new Scanner(System.in);
 		s.address = scanner.nextLine();
 		do {
 			System.out.println("Do you wish to add a horse to the stable?"); 
@@ -26,8 +27,8 @@ class Main {
 				break;
 			}
 		}while(true);
-		//Display the info here
-                //You code here!
+		 for(Horse h2 : s.arrayList){
+            System.out.println("Horse #1 Name: " + h2.hn +" Weight: "+ h2.w + " Tame: " + h2.t);
 	  }
   }
 }
