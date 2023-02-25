@@ -28,7 +28,7 @@ class Main {
 			}
 		}while(true);
 		 for(Horse h2 : s.arrayList){
-            System.out.println("Horse #1 Name: " + h2.hn +" Weight: "+ h2.w + " Tame: " + h2.t);
+            System.out.println("Horse #" + (s.arrayList.indexOf(h2)+1)+ " Name: " + h2.hn +" Weight: "+ h2.w + " Tame: " + h2.t);
 	  }
   }
 }
